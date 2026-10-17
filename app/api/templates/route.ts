@@ -1,4 +1,5 @@
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
+import { productConfig } from "@/config/product";
 
 export const runtime = "nodejs";
 
@@ -51,7 +52,7 @@ export async function GET() {
   page.drawText("Draw your own patterns, scales and silly smiles. There are no wrong fish!", {
     x: 52, y: 58, size: 9, font: bodyFont, color: muted,
   });
-  page.drawText("FINFOLK  ·  Made for little big imaginations", {
+  page.drawText(`${productConfig.brand.toUpperCase()}  ·  Made for little big imaginations`, {
     x: 52, y: 39, size: 7, font: titleFont, color: muted,
   });
 
@@ -59,7 +60,7 @@ export async function GET() {
   return new Response(new Uint8Array(bytes), {
     headers: {
       "Content-Type": "application/pdf",
-      "Content-Disposition": 'attachment; filename="finfolk-fish-templates.pdf"',
+      "Content-Disposition": 'attachment; filename="drawarium-fish-templates.pdf"',
       "Cache-Control": "public, max-age=3600",
       "X-Content-Type-Options": "nosniff",
     },

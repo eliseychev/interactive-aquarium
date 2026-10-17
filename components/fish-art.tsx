@@ -55,9 +55,15 @@ export function FishArt({
 export function BrandMark() {
   return (
     <span className="brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 40 40" fill="none">
-        <path d="M5 20c8-10 18-12 27-2l5-5v14l-5-5C23 32 13 30 5 20Z" fill="currentColor" />
-        <circle cx="25" cy="18" r="1.5" fill="#06203b" />
+      <svg viewBox="0 0 64 64" fill="none">
+        <path
+          d="M7 8h20c17 0 29 9 29 24S44 56 27 56H7V8Z"
+          stroke="#13b8c9"
+          strokeWidth="4"
+          strokeLinejoin="round"
+        />
+        <path d="m20 32 1-9 10 7c7-8 17-8 25 2-8 10-18 10-25 2l-10 7-1-9Z" fill="#ff7049" />
+        <circle cx="45" cy="30" r="1.6" fill="#10314c" />
       </svg>
     </span>
   );

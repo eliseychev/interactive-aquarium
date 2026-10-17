@@ -1,4 +1,4 @@
-# Finfolk — Interactive Aquarium
+# Drawarium — Draw it. Watch it swim.
 
 An English-first, responsive product website for a family aquarium where children make fish on paper or on a screen and see them swim on a big screen.
 

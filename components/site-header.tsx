@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BrandMark } from "@/components/fish-art";
+import { productConfig } from "@/config/product";
 
 const links = [
   { label: "How it works", href: "/#how-it-works" },
@@ -26,9 +27,9 @@ export function SiteHeader() {
   return (
     <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
       <div className="header-inner">
-        <Link className="brand" href="/" aria-label="Finfolk home" onClick={() => setMenuOpen(false)}>
+        <Link className="brand" href="/" aria-label={`${productConfig.brand} home`} onClick={() => setMenuOpen(false)}>
           <BrandMark />
-          <span>finfolk<span className="brand-period">.</span></span>
+          <span>{productConfig.brand}</span>
         </Link>
         <nav className={`main-nav${menuOpen ? " is-open" : ""}`} aria-label="Main navigation">
           {links.map((link) => (

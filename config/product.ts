@@ -1,9 +1,9 @@
 export const productConfig = {
-  brand: "finfolk",
+  brand: "Drawarium",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   freeFishCount: 3,
   supportEmail:
-    process.env.NEXT_PUBLIC_SUPPORT_EMAIL || "hello@interactiveaquarium.com",
+    process.env.NEXT_PUBLIC_SUPPORT_EMAIL || "hello@drawarium.com",
   appUrls: {
     androidTv: process.env.NEXT_PUBLIC_ANDROID_TV_APP_URL || "",
     googlePlay: process.env.NEXT_PUBLIC_GOOGLE_PLAY_URL || "",

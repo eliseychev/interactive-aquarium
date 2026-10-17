@@ -7,20 +7,20 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(productConfig.siteUrl),
   title: {
-    default: "Finfolk — Draw a fish. Watch it come alive.",
-    template: "%s | Finfolk",
+    default: `${productConfig.brand} — Draw it. Watch it swim.`,
+    template: `%s | ${productConfig.brand}`,
   },
   description:
     "Turn your TV into a magical aquarium filled with fish created by your kids. Draw digitally or color on paper, then watch every fish come alive.",
   openGraph: {
-    title: "Finfolk — Draw a fish. Watch it come alive.",
+    title: `${productConfig.brand} — Draw it. Watch it swim.`,
     description: `A big-screen aquarium made together by little artists. Your first ${productConfig.freeFishCount} fish are free.`,
-    siteName: "Finfolk",
+    siteName: productConfig.brand,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Finfolk — Draw a fish. Watch it come alive.",
+    title: `${productConfig.brand} — Draw it. Watch it swim.`,
     description: "A big-screen aquarium made together by little artists.",
   },
   icons: { icon: "/icon.svg" },

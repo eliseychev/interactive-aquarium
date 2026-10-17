@@ -55,9 +55,9 @@ export function MagicSection() {
               <FishArt className="tv-fish tv-fish-two" color="#a78bfa" accent="#f6b8d1" variant={2} />
               <span className="tv-bubble tv-bubble-one" /><span className="tv-bubble tv-bubble-two" />
               <span className="tv-grass grass-left" /><span className="tv-grass grass-right" />
-              <div className="tv-screen-label"><span className="status-dot" /> FINFOLK AQUARIUM</div>
+              <div className="tv-screen-label"><span className="status-dot" /> DRAWARIUM AQUARIUM</div>
             </div>
-            <div className="tv-chin"><span>finfolk</span><i /></div>
+            <div className="tv-chin"><span>{productConfig.brand}</span><i /></div>
             <div className="tv-stand" />
           </div>
           <div className="magic-sticker"><BrandMark /><span>And then<br /><b>they swim!</b></span></div>
@@ -264,7 +264,7 @@ export function DownloadSection() {
               <FishArt className="download-fish df-three" color="#2dd4bf" accent="#b9f7e8" variant={2} />
               <span className="download-screen-grass" />
             </div>
-            <span className="download-tv-logo">finfolk</span>
+            <span className="download-tv-logo">{productConfig.brand}</span>
             <span className="download-tv-dot" />
             <i className="download-stand" />
           </div>

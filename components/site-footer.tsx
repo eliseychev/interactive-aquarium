@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div className="footer-brand-block">
           <Link className="brand" href="/">
             <BrandMark />
-            <span>finfolk<span className="brand-period">.</span></span>
+            <span>{productConfig.brand}</span>
           </Link>
           <p>A little creativity goes a long way.</p>
         </div>
@@ -36,7 +36,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} Finfolk. Made for little big imaginations.</span>
+        <span>© {new Date().getFullYear()} {productConfig.brand}. Made for little big imaginations.</span>
         <span className="footer-note"><span className="status-dot" /> No subscriptions. Just fish.</span>
       </div>
     </footer>

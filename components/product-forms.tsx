@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { authService } from "@/lib/services";
 import { trackEvent } from "@/lib/analytics";
+import { productConfig } from "@/config/product";
 
 export function AuthForm({
   mode,
@@ -40,7 +41,7 @@ export function AuthForm({
         <button className="button button-dark" type="submit">{isSignup ? "Create my aquarium" : "Continue"} <span>↗</span></button>
         {message && <p className="form-feedback" role="status">{message}</p>}
       </form>
-      <p>{isSignup ? "Already have an account?" : "New to Finfolk?"} <Link className="inline-link" href={isSignup ? "/login" : "/signup"}>{isSignup ? "Log in" : "Start your aquarium"} <span>↗</span></Link></p>
+      <p>{isSignup ? "Already have an account?" : `New to ${productConfig.brand}?`} <Link className="inline-link" href={isSignup ? "/login" : "/signup"}>{isSignup ? "Log in" : "Start your aquarium"} <span>↗</span></Link></p>
     </div>
   );
 }
